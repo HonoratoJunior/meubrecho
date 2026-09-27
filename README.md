@@ -1,4 +1,4 @@
-cat << 'EOF' > ~/meubrecho/README.md
+
 # 🛍️ Thrift Store & Partners Online
 
 > **Plataforma Full-Stack de E-commerce Híbrido (Marketplace de Desapegos + Módulo de Afiliados)** desenvolvida com arquitetura distribuída, microsserviço assíncrono em Go e banco de dados relacional PostgreSQL.
