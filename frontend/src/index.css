@@ -1,0 +1,58 @@
+/* Hero Banner de Destaque */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.65);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2.5rem;
+  color: #ffffff;
+  background: linear-gradient(90deg, rgba(29, 53, 87, 0.85) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+.hero-overlay h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 0.8rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hero-overlay p {
+  font-size: 1.05rem;
+  max-width: 650px;
+  margin-bottom: 1.2rem;
+  line-height: 1.4;
+  opacity: 0.95;
+}
+
+.hero-badge {
+  background-color: #e63946;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 10px rgba(230, 57, 70, 0.4);
+}
