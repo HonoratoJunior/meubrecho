@@ -323,3 +323,65 @@ body {
   cursor: pointer;
   font-weight: 600;
 }
+
+/* Ajustes Mobile Responsivos */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem;
+  }
+
+  .search-bar input {
+    width: 100%;
+  }
+
+  .user-actions {
+    width: 100%;
+  }
+
+  .btn-loja, .btn-vender {
+    flex: 1;
+    font-size: 0.85rem;
+    padding: 0.7rem 0.5rem;
+  }
+
+  .hero-banner {
+    height: 220px;
+  }
+
+  .hero-overlay {
+    padding: 1.2rem;
+  }
+
+  .hero-overlay h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero-overlay p {
+    font-size: 0.85rem;
+  }
+
+  .produtos-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 0.8rem;
+  }
+
+  .card-produto img {
+    height: 150px;
+  }
+
+  .card-conteudo {
+    padding: 0.8rem;
+  }
+
+  .card-rodape {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .btn-comprar {
+    width: 100%;
+  }
+}

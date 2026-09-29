@@ -1,13 +1,23 @@
 import { Pool } from 'pg';
+import dotenv from 'dotenv';
 
-export const db = new Pool({
-  user: 'postgres',
-  host: 'localhost',
-  database: 'brecho_db',
-  password: 'postgres',
-  port: 5432,
-});
+dotenv.config();
+
+export const db = new Pool(
+  process.env.DATABASE_URL
+    ? { 
+        connectionString: process.env.DATABASE_URL, 
+        ssl: { rejectUnauthorized: false } 
+      }
+    : {
+        user: 'postgres',
+        host: 'localhost',
+        database: 'brecho_db',
+        password: 'postgres',
+        port: 5432,
+      }
+);
 
 db.on('connect', () => {
-  console.log('⚡ Conectado ao banco de dados PostgreSQL (brecho_db)!');
+  console.log('⚡ Banco de dados conectado com sucesso!');
 });
